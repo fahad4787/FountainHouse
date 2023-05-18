@@ -1,0 +1,20 @@
+.slideBox {
+    text-align: center;
+
+    .avatar {
+        width: 150px;
+        margin: 0 auto 10px auto;
+
+        img {
+            border-radius: 50%;
+            box-shadow: 3px 3px 4px 1px rgba(6, 6, 6, 0.28);
+        }
+    }
+    h5{
+        color: #ff578c;
+    }
+    p{
+        max-width: 800px;
+        margin: 0 auto 50px auto;
+    }
+}

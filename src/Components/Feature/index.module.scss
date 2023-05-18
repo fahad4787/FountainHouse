@@ -1,0 +1,40 @@
+.featureList {
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-weight: 100;
+
+        li {
+            h5 {
+                letter-spacing: 2px;
+                font-size: 1.5em;
+                font-weight: 600;
+                margin-bottom: 1.3em;
+                text-transform: uppercase;
+                color: #000;
+            }
+
+            a {
+                display: block;
+                letter-spacing: 2px;
+                font-size: 1em;
+                font-weight: 600;
+                margin-bottom: 1em;
+                text-decoration: none;
+                color: #000;
+
+                &:hover {
+                    color: #00598e;
+                    transition: all ease 0.3s;
+                }
+            }
+
+            .para {
+                color: #848484;
+                font-size: .95em;
+                line-height: 1.8em;
+            }
+        }
+    }
+}

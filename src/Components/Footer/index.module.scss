@@ -1,0 +1,48 @@
+.footer {
+    border-top: 1.5px solid #eee;
+    padding: 40px 0;
+    background-color: #242424;
+    div[class*="col"]{
+        &:last-child{
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        color: #fff;
+
+        li {
+            h6 {
+                letter-spacing: 2px;
+                font-size: 1em;
+                font-weight: 600;
+                margin-bottom: 1em;
+                color: #fff;
+            }
+
+            a,p {
+                text-decoration: none;
+                display: block;
+                padding: 5px 0;
+                color: #848484;
+                font-size: .95em;
+                transition: all ease 0.4s;
+
+                &:hover {
+                    color: #fff;
+                    transition: all ease 0.4s;
+                }
+            }
+
+            &:last-child {
+                a {
+                    padding-bottom: 0;
+                }
+            }
+        }
+    }
+}

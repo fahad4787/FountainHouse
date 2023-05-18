@@ -1,0 +1,71 @@
+@import "~bootstrap/scss/bootstrap";
+@import "Style/base";
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url(../Images/bg.png);
+  font-family: texFontReg;
+  font-size: 14px;
+  color:  #333;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  line-height: 1.42857143;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.container {
+  max-width: 1170px !important;
+}
+
+nav {
+  font-family: $Poppins;
+}
+
+section {
+  padding: 3em 0;
+  overflow: hidden;
+}
+.imgBox{
+  img{
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+.slick-slider{
+  .slick-dots{
+    li{
+      margin: 0 2px;
+      &.slick-active{
+        button{
+          &:before{
+            color: #00abff;
+            cursor: default;
+            transform: rotateX(360deg);
+            transition: transform 2s;
+          }
+        }
+
+      }
+      button{
+      &:before{
+        font-size: 15px;
+        color: #000;
+        opacity: 1;
+      }
+      }
+    }
+  }
+}
+.collapse:not(.show) {
+  left: -350px;
+  display: block;
+  transition: all ease 0.6s;
+}

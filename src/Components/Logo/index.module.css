@@ -1,0 +1,13 @@
+.logo {
+  position: relative;
+  width: 400px;
+  float: left;
+}
+.logo a {
+  display: block;
+}
+.logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}/*# sourceMappingURL=index.module.css.map */

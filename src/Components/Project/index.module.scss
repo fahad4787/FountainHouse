@@ -1,0 +1,41 @@
+@import "../../Style/include-media";
+.flexBox{
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    &.flexDirection{
+        flex-direction: row-reverse;
+    }
+    .textBox{
+        background: #00BFC0;
+        padding: 4.9em 3.3em;
+        flex: 0 0 50%;
+        color: #fff;
+        font-size: 13px;
+        @include media("<tablet"){
+            flex: 0 0 100%;
+        }
+        h3{
+            font-size: 18px;
+            color: #fff;
+        }
+        h4{
+            color: #000;
+            font-size: 16px;
+        }
+    }
+    .imgBox{
+        flex: 0 0 50%;
+        height: 500px;
+        @include media("<tablet-x"){
+            height: unset;
+        }
+        @include media("<tablet"){
+            flex: 0 0 100%;
+        }
+        img{
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

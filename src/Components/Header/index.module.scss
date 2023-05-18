@@ -1,0 +1,58 @@
+@import "../../Style/include-media";
+
+#header {
+    position: relative;
+    width: 100%;
+    padding: 1rem 0;
+    background-color: #fff;
+
+    .rightSideHeader {
+        float: right;
+        @include media("<tablet-x"){
+            padding-right: 70px;
+        }
+        @include media("<tablet") {
+            float: unset;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            flex-direction: row;
+            padding: 20px 60px 20px 0;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+    }
+}
+
+.socialAddress {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 13px;
+    color: #898989;
+    margin-bottom: 8px;
+    @include media("<tablet"){
+        text-align: center;
+    }
+
+    li {
+        display: inline-block;
+
+
+        i {
+            color: #5E99D0;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+
+        a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #898989;
+
+        }
+    }
+}

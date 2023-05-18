@@ -1,0 +1,20 @@
+@import "../../Style/include-media";
+.textBox{
+    margin: 2em 0 0 0;
+    padding: 2em 0;
+    background: #00598e;
+    text-align: center;
+    color: #fff;
+    @include media("<phone"){
+        font-size: 12px;
+    }
+    h3{
+        color: #fff;
+        @include media("<phone"){
+            font-size: 20px;
+        }
+    }
+    p{
+        margin-bottom: 0;
+    }
+}

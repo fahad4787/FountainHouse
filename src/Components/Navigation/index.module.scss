@@ -1,0 +1,111 @@
+@import "../../Style/include-media";
+
+.navigation {
+    clear: both;
+
+    @include media ("<tablet-x") {
+        justify-content: flex-end !important;
+        position: unset !important;
+        padding: 0 !important;
+        margin: 0 !important;
+
+        [class*="navbar-toggler"] {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            padding: 0 !important;
+            border: 1px solid #cacaca;
+            border-radius: 3px;
+            z-index: 9999999;
+            font-size: 23px;
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+
+    [class*="navbar-collapse"] {
+        position: fixed;
+        z-index: 9999;
+        background: #fff;
+        top: 0;
+        bottom: 0;
+        height: 100vh;
+        left: -12px;
+        width: 270px;
+        transition: all ease 0.6s;
+    }
+
+
+}
+
+
+.nav {
+    font-family: texFontReg;
+    border: 1px solid #333;
+    flex-wrap: wrap;
+    @include media("<tablet-x"){
+        border:none;
+    }
+
+    [class*="dropdown-menu"] {
+        border: 1px solid rgba(0, 0, 0, .15);
+        padding: 5px 0 !important;
+        background-clip: padding-box;
+        min-width: 160px;
+        border-radius: 0 0 5px 5px;
+
+        a {
+            font-size: 14px;
+            padding: 3px 25px !important;
+            border: none;
+            color: #767676;
+
+            @include media("<tablet-x") {
+                font-size: 11px;
+                white-space: break-spaces;
+            }
+        }
+    }
+
+    a {
+        font-size: 21px;
+        color: #333;
+        border-left: 1px solid #333;
+
+        padding: 15px !important;
+        font-weight: 100;
+
+        &.greenBg {
+            background-color: #5CBF94;
+
+            &:hover {
+                background-color: #5CBF94;
+                color: #fff;
+                transition: all ease 0.4s;
+            }
+
+        }
+
+        &:hover {
+            background-color: #81CEFE;
+            color: #fff;
+            transition: all ease 0.4s;
+        }
+
+        &[class*="active"] {
+            background-color: #2B5A8E !important;
+            color: #fff;
+        }
+
+        &.blank {
+            padding: 8px !important;
+
+            &:hover {
+                background-color: transparent;
+            }
+        }
+    }
+}
+}
